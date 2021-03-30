@@ -1,5 +1,9 @@
 <?php
 
+function rand_color() {
+    return sprintf('#%06X', mt_rand(0, 0xFFFFFF));
+}
+
 function drawDuck($size, $pLeft, $pTop, $color, $id){
     echo '<!-- Svg Vector Icons : http://www.onlinewebfonts.com/icon -->
     <svg id="'.$id.'" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve" style="position: absolute; left: '.$pLeft.'%; top: '.$pTop.'%; width: '.$size.'px; height: '.$size.'px;" onclick="kill(this.id)">

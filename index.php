@@ -13,7 +13,7 @@ require_once 'func/duck.php';
     .dead {
         transform: rotate(180deg);
     }
-    
+
     html {
         cursor: crosshair;
     }
@@ -29,9 +29,6 @@ require_once 'func/duck.php';
 <body>
 <?php
 define('DUCKS_COUNT', 9);
-function rand_color() {
-    return sprintf('#%06X', mt_rand(0, 0xFFFFFF));
-}
 for ($i=0; $i < DUCKS_COUNT; $i++) { 
 
     $size = rand(20, 150);
