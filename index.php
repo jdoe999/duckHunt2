@@ -10,13 +10,15 @@ require_once 'func/duck.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-    svg {
+    .dead {
         transform: rotate(180deg);
     }
     </style>
     <script>
         function kill(id) {
             alert("Auvajs " + id);
+            var duck = document.getElementById(id);
+            duck.classList.add('dead');
         }
         </script>
 </head>
