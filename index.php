@@ -13,6 +13,10 @@ require_once 'func/duck.php';
     .dead {
         transform: rotate(180deg);
     }
+    
+    html {
+        cursor: crosshair;
+    }
     </style>
     <script>
         function kill(id) {
@@ -20,7 +24,7 @@ require_once 'func/duck.php';
             var duck = document.getElementById(id);
             duck.classList.add('dead');
         }
-        </script>
+    </script>
 </head>
 <body>
 <?php
